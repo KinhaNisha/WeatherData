@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="location">Weather in Zocca, Italy</h1>
+
+        <!-- Select element for changing location -->
+        <label for="location-select">Select Location:</label>
+        <select id="location-select">
+            <!-- Options will be generated dynamically -->
+        </select>
+
+        <div class="weather-info">
+            <table>
+                <tr>
+                    <th>Temperature</th>
+                    <th>Weather Type</th>
+                    <th>Weather Description</th>
+                    <th>Cloudiness</th>
+                </tr>
+                <tr>
+                    <td id="temperature">18.15°C</td>
+                    <td id="weather-type">Clouds</td>
+                    <td id="weather-description">Overcast Clouds</td>
+                    <td id="cloudiness">100%</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Wind Speed</th>
+                    <th>Feels Like</th>
+                    <th>Temp Min</th>
+                    <th>Temp Max</th>
+                </tr>
+                <tr>
+                    <td id="wind-speed">1.03 m/s</td>
+                    <td id="feels-like">18.06°C</td>
+                    <td id="temp-min">15.49°C</td>
+                    <td id="temp-max">18.70°C</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Pressure</th>
+                    <th>Humidity</th>
+                    <th>Sunrise Time</th>
+                    <th>Sunset Time</th>
+                </tr>
+                <tr>
+                    <td id="pressure">1009 hPa</td>
+                    <td id="humidity">78%</td>
+                    <td id="sunrise-time">11:00:09</td>
+                    <td id="sunset-time">22:03:21</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
